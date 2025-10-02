@@ -302,6 +302,9 @@
                 <li>Bodies are left for scavenger birds, primarily vultures</li>
             </ul>
             <p style="margin-top: 15px; font-style: italic; text-align: center;">A practice dating back over 3,000 years</p>
+            <div class="info-box">
+                <strong>Today's Focus:</strong> We'll explore the six key aspects of this ritual: the religion, the practitioners, the ritual process, timing, location, and purpose.
+            </div>
         </div>
 
         <!-- Slide 3: Question 1 - What is the Religion? -->
@@ -317,9 +320,15 @@
             <h3>Core Beliefs:</h3>
             <ul>
                 <li><strong>One Supreme God:</strong> Ahura Mazda (Wise Lord)</li>
+                <li><strong>Dualism:</strong> Constant battle between good (Spenta Mainyu) and evil (Angra Mainyu)</li>
                 <li><strong>Sacred Elements:</strong> Fire, water, earth, and air are pure and must not be polluted</li>
                 <li><strong>Good Thoughts, Good Words, Good Deeds:</strong> Central ethical principle</li>
+                <li><strong>Free Will:</strong> Humans choose between good and evil</li>
             </ul>
+
+            <div class="info-box">
+                <strong>Historical Note:</strong> Zoroastrianism was the state religion of ancient Persian empires and influenced Judaism, Christianity, and Islam.
+            </div>
         </div>
 
         <!-- Slide 4: Question 2 - Who Performs the Ritual? -->
@@ -355,8 +364,16 @@
                 <li><strong>Final Rest:</strong> Bones bleached by sun, then placed in central ossuary pit</li>
             </ul>
             
-            <h3>Prayers:</h3>
-            <p>Priests recite sacred prayers including the Patet (prayers of repentance) and Ahunavar (most sacred prayer) throughout the ritual.</p>
+            <h3>Words (Prayers):</h3>
+            <ul>
+                <li><strong>Patet:</strong> Prayers of repentance recited throughout</li>
+                <li><strong>Ahunavar:</strong> Most sacred Zoroastrian prayer chanted by priests</li>
+            </ul>
+            
+            <h3>Objects:</h3>
+            <ul>
+                <li>White garments, iron bier, sacred fire kept burning nearby</li>
+            </ul>
         </div>
 
         <!-- Slide 6: Question 4 - When is it Performed? -->
@@ -371,7 +388,13 @@
                 <li><strong>Avoiding Night:</strong> Night is associated with evil spirits in Zoroastrian belief</li>
             </ul>
             
-            <p>The ritual is performed year-round whenever a Zoroastrian dies, regardless of season, month, or religious holidays.</p>
+            <h3>No Specific Season or Month:</h3>
+            <p>The ritual is performed whenever a Zoroastrian dies, regardless of:</p>
+            <ul>
+                <li>Season (performed year-round)</li>
+                <li>Month or day of the week</li>
+                <li>Religious holidays or festivals</li>
+            </ul>
             
             <div class="info-box">
                 <strong>Key Principle:</strong> Speed is essential because the dead body is considered immediately contaminated by the demon of decay (druj-i-nasush). The longer the delay, the greater the spiritual pollution.
@@ -390,7 +413,12 @@
                 <li><strong>Karachi, Pakistan:</strong> Limited active use</li>
             </ul>
             
-            <p>Zoroastrianism is mainly practiced in India (Parsi community) and Iran (birthplace of the religion). Diaspora communities exist in Western countries but cannot practice sky burial due to legal restrictions.</p>
+            <h3>Geographic Regions Where Zoroastrianism is Practiced:</h3>
+            <ul>
+                <li><strong>South Asia:</strong> Primarily India (Parsi community in Mumbai, Gujarat)</li>
+                <li><strong>Middle East/West Asia:</strong> Iran (birthplace of religion), small communities remain</li>
+                <li><strong>Diaspora Communities:</strong> United Kingdom, United States, Canada, Australia (though sky burial not practiced in these locations due to legal restrictions)</li>
+            </ul>
             
             <div class="info-box">
                 <strong>Tower Characteristics:</strong> Always built on elevated ground (hilltops), away from populated areas, with specific orientation and circular architecture.
@@ -430,9 +458,16 @@
             <ul>
                 <li><strong>Vulture Decline:</strong> Environmental toxins have devastated vulture populations (99% decline in India)</li>
                 <li><strong>Urbanization:</strong> Cities encroaching on traditional tower sites</li>
+                <li><strong>Legal Issues:</strong> Many countries prohibit the practice</li>
+                <li><strong>Small Population:</strong> Global Zoroastrian community is only 100,000-200,000</li>
             </ul>
-
-            <p>Today, some communities use cremation or solar concentrators as adaptations.</p>
+            
+            <h3>Adaptations:</h3>
+            <ul>
+                <li>Some communities now use cremation or burial</li>
+                <li>Solar concentrators installed in some towers to speed decomposition</li>
+                <li>Debate within community about maintaining tradition vs. practical realities</li>
+            </ul>
             
             <div class="conclusion-box">
                 <strong>Final Reflection:</strong> The Tower of Silence represents a 3,000-year-old solution to an eternal human question: how do we honor the dead while respecting the natural world? Despite modern challenges, it remains a powerful testament to Zoroastrian beliefs in purity, ecology, and the sacred cycle of life and death.
