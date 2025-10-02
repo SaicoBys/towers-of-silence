@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #f8f9fa;
             overflow: hidden;
             color: #333;
         }
@@ -33,11 +33,12 @@
             max-width: 1000px;
             height: 80vh;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            padding: 40px 50px;
+            border: 2px solid #667eea;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            padding: 30px 40px;
             display: none;
             flex-direction: column;
-            overflow-y: auto;
+            overflow: hidden;
             animation: fadeIn 0.5s ease-in;
         }
 
@@ -57,44 +58,44 @@
         }
 
         h1 {
-            font-size: 2.8em;
+            font-size: 2.5em;
             color: #667eea;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             text-align: center;
         }
 
         h2 {
-            font-size: 2em;
+            font-size: 1.8em;
             color: #667eea;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             border-bottom: 3px solid #764ba2;
-            padding-bottom: 8px;
+            padding-bottom: 6px;
         }
 
         h3 {
-            font-size: 1.4em;
+            font-size: 1.2em;
             color: #764ba2;
-            margin-top: 15px;
-            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-bottom: 8px;
         }
 
         p {
-            font-size: 1.1em;
-            line-height: 1.5;
-            margin-bottom: 15px;
-            color: #555;
+            font-size: 1em;
+            line-height: 1.4;
+            margin-bottom: 10px;
+            color: #333;
         }
 
         ul {
-            font-size: 1.05em;
-            line-height: 1.6;
-            margin-left: 25px;
-            margin-bottom: 15px;
-            color: #555;
+            font-size: 0.95em;
+            line-height: 1.4;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            color: #333;
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 4px;
         }
 
         .subtitle {
@@ -162,18 +163,20 @@
 
         .info-box {
             background: #f0f0f0;
-            padding: 15px;
+            padding: 10px;
             border-radius: 10px;
-            margin-top: 15px;
+            margin-top: 10px;
+            font-size: 0.9em;
         }
 
         .conclusion-box {
             background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 20px;
+            padding: 15px;
             border-radius: 15px;
-            margin-top: 20px;
+            margin-top: 10px;
             text-align: center;
+            font-size: 0.9em;
         }
 
         .title-slide {
@@ -203,10 +206,10 @@
 
         .slide-image {
             max-width: 100%;
-            max-height: 300px;
+            max-height: 200px;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            margin: 15px auto;
+            margin: 10px auto;
             display: block;
             object-fit: cover;
         }
