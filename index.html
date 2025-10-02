@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Towers of Silence - Zoroastrian Funeral Ritual</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow: hidden;
+            color: #333;
+        }
+
+        .presentation {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .slide {
+            background: white;
+            width: 90%;
+            max-width: 1000px;
+            height: 80vh;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px 50px;
+            display: none;
+            flex-direction: column;
+            overflow-y: auto;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 2.8em;
+            color: #667eea;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #667eea;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #764ba2;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: #764ba2;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul {
+            font-size: 1.05em;
+            line-height: 1.6;
+            margin-left: 25px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            color: #666;
+            text-align: center;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .controls {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 100;
+        }
+
+        button {
+            background: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 1em;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            background: #667eea;
+            color: white;
+        }
+
+        button:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .slide-number {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-weight: bold;
+            color: #667eea;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            font-size: 0.95em;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .info-box {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .conclusion-box {
+            background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .title-slide {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .title-slide h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+
+        .title-slide .subtitle {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .question-number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation">
+        <div class="slide-number">
+            <span id="currentSlide">1</span> / <span id="totalSlides">9</span>
+        </div>
+
+        <!-- Slide 1: Title -->
+        <div class="slide active title-slide">
+            <h1>Towers of Silence</h1>
+            <p class="subtitle">The Sacred Zoroastrian Funeral Ritual</p>
+        </div>
+
+        <!-- Slide 2: Introduction -->
+        <div class="slide">
+            <h2>What are Towers of Silence?</h2>
+            <p>Towers of Silence, known as <span class="highlight">Dakhmas</span> in Persian, are circular raised structures used for a unique funeral ritual practiced by Zoroastrians.</p>
+            <ul>
+                <li>Elevated stone platforms exposed to the sky and elements</li>
+                <li>Traditional funeral method of the Zoroastrian faith</li>
+                <li>Practice of <span class="highlight">sky burial</span> or excarnation</li>
+                <li>Bodies are left for scavenger birds, primarily vultures</li>
+            </ul>
+            <p style="margin-top: 15px; font-style: italic; text-align: center;">A practice dating back over 3,000 years</p>
+            <div class="info-box">
+                <strong>Today's Focus:</strong> We'll explore the six key aspects of this ritual: the religion, the practitioners, the ritual process, timing, location, and purpose.
+            </div>
+        </div>
+
+        <!-- Slide 3: Question 1 - What is the Religion? -->
+        <div class="slide">
+            <span class="question-number">QUESTION 1</span>
+            <h2>What is the Religion?</h2>
+            <h3>Zoroastrianism</h3>
+            <p>One of the world's oldest monotheistic religions, founded by the prophet Zoroaster (Zarathustra) in ancient Persia around 1500-1000 BCE.</p>
+            
+            <h3>Core Beliefs:</h3>
+            <ul>
+                <li><strong>One Supreme God:</strong> Ahura Mazda (Wise Lord)</li>
+                <li><strong>Dualism:</strong> Constant battle between good (Spenta Mainyu) and evil (Angra Mainyu)</li>
+                <li><strong>Sacred Elements:</strong> Fire, water, earth, and air are pure and must not be polluted</li>
+                <li><strong>Good Thoughts, Good Words, Good Deeds:</strong> Central ethical principle</li>
+                <li><strong>Free Will:</strong> Humans choose between good and evil</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>Historical Note:</strong> Zoroastrianism was the state religion of ancient Persian empires and influenced Judaism, Christianity, and Islam.
+            </div>
+        </div>
+
+        <!-- Slide 4: Question 2 - Who Performs the Ritual? -->
+        <div class="slide">
+            <span class="question-number">QUESTION 2</span>
+            <h2>Who Performs the Ritual?</h2>
+            
+            <h3>The Practitioners:</h3>
+            <ul>
+                <li><strong>Zoroastrian Priests (Mobeds):</strong> Recite prayers and oversee the religious aspects</li>
+                <li><strong>Corpse-bearers (Nasassalars or Khandhias):</strong> Specially trained individuals who handle the body</li>
+                <li><strong>Family Members:</strong> Participate in initial prayers but do not touch the body</li>
+                <li><strong>Community Members:</strong> Follow at a distance during the procession</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>Important Detail:</strong> Corpse-bearers must work in pairs and undergo purification rituals after handling the dead. They wear white garments and must follow strict purity laws. Only they are allowed to enter the Tower of Silence.
+            </div>
+        </div>
+
+        <!-- Slide 5: Question 3 - What is the Ritual? -->
+        <div class="slide">
+            <span class="question-number">QUESTION 3</span>
+            <h2>What is the Ritual?</h2>
+            
+            <h3>Actions Involved:</h3>
+            <ul>
+                <li><strong>Preparation:</strong> Body is washed, dressed in white sudra (sacred shirt) and kusti (sacred cord)</li>
+                <li><strong>Sagdid Ceremony:</strong> A dog views the body to confirm death and ward off evil spirits</li>
+                <li><strong>Procession:</strong> Corpse-bearers carry body on iron bier to the tower</li>
+                <li><strong>Exposure:</strong> Body placed in designated ring (men outer, women middle, children inner)</li>
+                <li><strong>Excarnation:</strong> Vultures consume the flesh within hours</li>
+                <li><strong>Final Rest:</strong> Bones bleached by sun, then placed in central ossuary pit</li>
+            </ul>
+            
+            <h3>Words (Prayers):</h3>
+            <ul>
+                <li><strong>Patet:</strong> Prayers of repentance recited throughout</li>
+                <li><strong>Ahunavar:</strong> Most sacred Zoroastrian prayer chanted by priests</li>
+            </ul>
+            
+            <h3>Objects:</h3>
+            <ul>
+                <li>White garments, iron bier, sacred fire kept burning nearby</li>
+            </ul>
+        </div>
+
+        <!-- Slide 6: Question 4 - When is it Performed? -->
+        <div class="slide">
+            <span class="question-number">QUESTION 4</span>
+            <h2>When is it Performed?</h2>
+            
+            <h3>Timing of the Ritual:</h3>
+            <ul>
+                <li><strong>As Soon as Possible:</strong> Ideally within 24 hours of death</li>
+                <li><strong>Time of Day:</strong> Traditionally performed during daylight hours when vultures are active</li>
+                <li><strong>Avoiding Night:</strong> Night is associated with evil spirits in Zoroastrian belief</li>
+            </ul>
+            
+            <h3>No Specific Season or Month:</h3>
+            <p>The ritual is performed whenever a Zoroastrian dies, regardless of:</p>
+            <ul>
+                <li>Season (performed year-round)</li>
+                <li>Month or day of the week</li>
+                <li>Religious holidays or festivals</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>Key Principle:</strong> Speed is essential because the dead body is considered immediately contaminated by the demon of decay (druj-i-nasush). The longer the delay, the greater the spiritual pollution.
+            </div>
+        </div>
+
+        <!-- Slide 7: Question 5 - Where is it Performed? -->
+        <div class="slide">
+            <span class="question-number">QUESTION 5</span>
+            <h2>Where is it Performed?</h2>
+            
+            <h3>Specific Locations (Towers):</h3>
+            <ul>
+                <li><strong>Mumbai, India:</strong> Malabar Hill - most famous active site with multiple towers</li>
+                <li><strong>Yazd, Iran:</strong> Historical towers (largely inactive but preserved)</li>
+                <li><strong>Karachi, Pakistan:</strong> Limited active use</li>
+            </ul>
+            
+            <h3>Geographic Regions Where Zoroastrianism is Practiced:</h3>
+            <ul>
+                <li><strong>South Asia:</strong> Primarily India (Parsi community in Mumbai, Gujarat)</li>
+                <li><strong>Middle East/West Asia:</strong> Iran (birthplace of religion), small communities remain</li>
+                <li><strong>Diaspora Communities:</strong> United Kingdom, United States, Canada, Australia (though sky burial not practiced in these locations due to legal restrictions)</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>Tower Characteristics:</strong> Always built on elevated ground (hilltops), away from populated areas, with specific orientation and circular architecture.
+            </div>
+        </div>
+
+        <!-- Slide 8: Question 6 - Why/Purpose -->
+        <div class="slide">
+            <span class="question-number">QUESTION 6</span>
+            <h2>What is the Purpose?</h2>
+            
+            <h3>Religious Reasons:</h3>
+            <ul>
+                <li><strong>Protecting Sacred Elements:</strong> Burial pollutes earth, cremation pollutes fire, water burial pollutes water. Sky burial keeps all elements pure</li>
+                <li><strong>Preventing Evil Contamination:</strong> The body is possessed by demons of decay and must not touch sacred creation</li>
+                <li><strong>Facilitating Soul's Journey:</strong> Quick disposal helps the soul (urvan) travel to the afterlife - the Chinvat Bridge and House of Song (paradise)</li>
+            </ul>
+            
+            <h3>Spiritual Philosophy:</h3>
+            <ul>
+                <li><strong>Ecological Harmony:</strong> Returns body to nature in the purest way</li>
+                <li><strong>Equality in Death:</strong> All decompose the same way, regardless of wealth or status</li>
+                <li><strong>Speed of Transition:</strong> Rapid disposal helps soul's journey</li>
+                <li><strong>Humility:</strong> The body is temporary; only the soul and one's deeds matter</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>Core Teaching:</strong> "The body is merely a vessel for the soul during earthly life. What truly matters is the journey of the soul to meet Ahura Mazda."
+            </div>
+        </div>
+
+        <!-- Slide 9: Conclusion -->
+        <div class="slide">
+            <h2>Conclusion: Towers of Silence Today</h2>
+            
+            <h3>Modern Challenges:</h3>
+            <ul>
+                <li><strong>Vulture Decline:</strong> Environmental toxins have devastated vulture populations (99% decline in India)</li>
+                <li><strong>Urbanization:</strong> Cities encroaching on traditional tower sites</li>
+                <li><strong>Legal Issues:</strong> Many countries prohibit the practice</li>
+                <li><strong>Small Population:</strong> Global Zoroastrian community is only 100,000-200,000</li>
+            </ul>
+            
+            <h3>Adaptations:</h3>
+            <ul>
+                <li>Some communities now use cremation or burial</li>
+                <li>Solar concentrators installed in some towers to speed decomposition</li>
+                <li>Debate within community about maintaining tradition vs. practical realities</li>
+            </ul>
+            
+            <div class="conclusion-box">
+                <strong>Final Reflection:</strong> The Tower of Silence represents a 3,000-year-old solution to an eternal human question: how do we honor the dead while respecting the natural world? Despite modern challenges, it remains a powerful testament to Zoroastrian beliefs in purity, ecology, and the sacred cycle of life and death.
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prevBtn" onclick="changeSlide(-1)">← Previous</button>
+            <button id="nextBtn" onclick="changeSlide(1)">Next →</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        
+        document.getElementById('totalSlides').textContent = totalSlides;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            
+            document.getElementById('currentSlide').textContent = currentSlide + 1;
+            
+            document.getElementById('prevBtn').disabled = currentSlide === 0;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides - 1;
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') changeSlide(-1);
+            if (e.key === 'ArrowRight') changeSlide(1);
+        });
+
+        showSlide(0);
+    </script>
+</body>
+</html>
